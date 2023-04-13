@@ -1,0 +1,62 @@
+/* Mobile-first styles */
+
+/* Set a default font size and line height */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Set a max width for the main content */
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  /* Hide the navigation menu by default */
+  nav ul {
+    display: none;
+  }
+  
+  /* Show the menu when the hamburger icon is clicked */
+  .menu-icon {
+    display: block;
+  }
+  
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+  
+  nav ul.show {
+    display: block;
+  }
+  
+  /* Styles for tablet-sized screens */
+  @media (min-width: 768px) {
+    /* Increase the font size and line height */
+    body {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+  
+  /* Styles for desktop-sized screens */
+  @media (min-width: 1024px) {
+    /* Increase the max width of the main content */
+    main {
+      max-width: 800px;
+    }
+  
+    /* Show the navigation menu */
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    /* Hide the hamburger menu icon */
+    .menu-icon {
+      display: none;
+    }
+  }
+  
