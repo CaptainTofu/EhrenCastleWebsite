@@ -19,3 +19,17 @@ function logMessage() {
     alert("Thanks for contacting us! We'll get back to you soon.");
   });
   
+  function openModal(title, description) {
+      var modal = document.getElementById("modal");
+      var modalTitle = document.getElementById("modal-title");
+      var modalDescription = document.getElementById("modal-description");
+
+      modal.style.display = "block";
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("modal");
+      modal.style.display = "none";
+    }
